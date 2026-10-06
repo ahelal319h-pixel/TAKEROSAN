@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TAKERO SAN — Programmer & Digital Creator</title>
+<meta name="description" content="TAKERO SAN builds modern websites, web apps, games, tools and digital experiences.">
+<meta property="og:title" content="TAKERO SAN — Build. Code. Create.">
+<meta property="og:description" content="Programmer & Digital Creator building modern websites, applications, games and digital experiences.">
+<meta name="theme-color" content="#0a0a0c">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lgo" viewBox="0 0 40 40"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff2a3d"/><stop offset="1" stop-color="#8f0f1c"/></linearGradient></defs><path d="M20 2l16 9v18l-16 9L4 29V11z" fill="rgba(255,42,61,.14)" stroke="url(#lg)" stroke-width="2" stroke-linejoin="round"/><text x="20" y="25.5" text-anchor="middle" font-family="ui-monospace,Consolas,monospace" font-weight="800" font-size="15" fill="#fff">TS</text></symbol></svg>
+<div id="load"><div><svg width="76" height="76" aria-hidden="true" style="filter:drop-shadow(0 0 16px #ff2a3d)"><use href="#lgo"/></svg><b style="display:block;margin-top:8px">TAKERO SAN</b><i></i></div></div>
+<div id="prog"></div><div id="dot"></div><div id="glow"></div>
+<canvas id="bg" aria-hidden="true"></canvas><div class="grid" aria-hidden="true"></div>
+
+<nav aria-label="Main">
+ <a class="logo" href="#home"><svg width="36" height="36" aria-hidden="true"><use href="#lgo"/></svg>TAKERO<span>.</span>SAN</a>
+ <div class="links" id="links">
+  <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#lab">Code Lab</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a>
+  <span id="ind"></span>
+ </div>
+ <button id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+</nav>
+
+<main>
+<section id="home" class="hero">
+ <div>
+  <p class="tag mono">// TAKERO SAN</p>
+  <h1 class="rv">BUILD.<br>CODE.<br><em>CREATE.</em></h1>
+  <p class="sub"><strong>Programmer &amp; Digital Creator</strong> building modern websites, applications, games and digital experiences.</p>
+  <p class="mono role">I build <b id="role" class="caret"></b></p>
+  <p class="lead">I turn ideas into functional, modern and interactive digital experiences using code, creativity and technology.</p>
+  <div class="cta"><a class="btn p mag" href="#contact">Contact Me</a></div>
+  <div class="stats">
+   <div class="stat glass"><b data-to="10" data-s="+">0</b><span>Projects</span></div>
+   <div class="stat glass"><b data-to="15" data-s="+">0</b><span>Technologies</span></div>
+   <div class="stat glass"><b>∞</b><span>Ideas</span></div>
+  </div>
+ </div>
+ <div class="term glass mono tilt" aria-label="Animated developer terminal">
+  <div class="tb"><i></i><i></i><i></i><span>takero@studio:~</span></div>
+  <div class="tbody caret" id="hterm"></div>
+ </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div class="mt" id="mt"></div></div>
+
+<section id="about">
+ <p class="tag mono">01 / About</p><h2>I don't just write code.<br>I build digital experiences.</h2>
+ <div class="about">
+  <div class="rv"><p class="lead">I'm TAKERO SAN, a programmer and digital creator who enjoys turning rough ideas into polished, working products. My focus is the space where logic meets design: clean code underneath, a sharp interface on top.</p>
+  <p class="lead">I work across programming, web development, game development, UI/UX and custom digital projects, always learning new tools and choosing the right one for the job.</p></div>
+  <div class="glass rv" style="padding:28px"><h3>What drives the work</h3>
+   <div class="pills"><span>Clean code</span><span>Interactive UI</span><span>Game development</span><span>Web development</span><span>UI/UX design</span><span>Automation</span><span>Problem solving</span><span>Curiosity</span></div></div>
+ </div>
+</section>
+
+<section id="skills">
+ <p class="tag mono">02 / Technology wall</p><h2>Tools I work with &amp; explore</h2>
+ <p class="lead">Languages, frameworks and platforms I build with and keep exploring. Filter, hover, tilt.</p>
+ <div class="filters" id="tf"></div><div class="wall" id="wall"></div>
+</section>
+
+<section id="lab">
+ <p class="tag mono">03 / Playground</p><h2>MY CODE LAB</h2>
+ <p class="lead">Pick a language. The editor, explanation, project idea and output update live.</p>
+ <div class="tabs" id="tabs" role="tablist"></div>
+ <div class="lab">
+  <div class="code glass mono"><div class="cb"><span id="lname"></span><button class="cp" id="copy">Copy code</button></div><pre><code id="ed"></code></pre></div>
+  <div class="info glass"><h3 id="ltitle"></h3><p id="ldesc"></p><p><strong>Example project:</strong> <span id="lproj"></span></p>
+   <div class="out mono" id="lout" aria-live="polite"></div></div>
+ </div>
+</section>
+
+<section id="projects">
+ <p class="tag mono">04 / Work</p><h2>Project showcase</h2>
+ <p class="lead">Project categories I build in. Each card is a placeholder you can swap for a real project link.</p>
+ <div class="filters" id="pf"></div><div class="pg" id="pg"></div>
+ <div class="feat glass rv">
+  <div class="vis" data-n="★" style="--x:40%"></div>
+  <div class="pb"><p class="tag mono">Featured concept</p><h3 style="font-size:2rem">Neon Studio Platform</h3>
+   <p>A cinematic, interactive web experience that combines real-time UI, smooth motion and a custom game-inspired interface. A showcase of how design and code work together.</p>
+   <div class="chips"><span>JavaScript</span><span>CSS</span><span>UI/UX</span><span>Canvas</span></div><a class="vp" href="#contact">Discuss a similar build →</a></div>
+ </div>
+</section>
+
+<section id="services">
+ <p class="tag mono">05 / Services</p><h2>WHAT I BUILD</h2>
+ <div class="sv" id="sv"></div>
+</section>
+
+<section id="process">
+ <p class="tag mono">06 / Process</p><h2>HOW I WORK</h2>
+ <p class="lead">A simple, clear path from your idea to a live product.</p>
+ <div class="steps" id="steps"></div>
+</section>
+
+<section id="terminal">
+ <p class="tag mono">07 / Terminal</p><h2>Talk to the system</h2>
+ <div class="term it glass mono"><div class="tb"><i></i><i></i><i></i><span>interactive shell</span></div><div class="tbody" id="iterm" aria-live="polite">Type or click a command. Try: help</div>
+  <div class="cmds" id="cmds"></div></div>
+</section>
+
+<section id="contact" class="ct">
+ <p class="tag mono">08 / Contact</p>
+ <h2>LET'S BUILD<br>SOMETHING GREAT.</h2>
+ <p class="lead" style="margin:auto">Have an idea, project or website in mind? Let's turn it into something real.</p>
+ <a class="btn p mag" href="https://wa.me/201120162474?text=Hi%20TAKERO%20SAN%2C%20I%20would%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp</a>
+ <p class="mono" style="color:var(--mu)">+20 112 016 2474</p>
+ <p class="av">Available for projects, collaborations and digital work.</p>
+ <div class="soc">
+  <a class="glass mag" href="https://wa.me/201120162474?text=Hi%20TAKERO%20SAN%2C%20I%20would%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+  <a class="glass mag" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener" aria-label="GitHub (replace link)">GH</a>
+  <a class="glass mag" href="mailto:your@email.com" aria-label="Email (replace address)">@</a>
+  <a class="glass mag" href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener" aria-label="LinkedIn (replace link)">in</a>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div><strong>Designed &amp; Built with Code.</strong><br>© 2026 — All Rights Reserved.</div>
+ <nav aria-label="Footer"><a href="#home">Home</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="https://wa.me/201120162474?text=Hi%20TAKERO%20SAN%2C%20I%20would%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">WhatsApp</a></nav>
+</footer>
+
+<a id="wa" href="https://wa.me/201120162474?text=Hi%20TAKERO%20SAN%2C%20I%20would%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 7.8c.3-.4.9-.4 1.1 0l.9 1.6c.2.3.1.6-.1.9l-.5.6c.8 1.5 1.9 2.5 3.5 3.3l.7-.6c.3-.2.6-.3.9-.1l1.6.9c.4.2.4.8 0 1.1-.6.7-1.5 1.1-2.4.9-3-.7-5.2-2.9-6-5.9-.1-.8.2-1.8.8-2.7z" fill="#fff"/></svg><span>Chat on WhatsApp</span></a>
+<button id="top" aria-label="Back to top">↑</button>
+<div id="pal" role="dialog" aria-label="Command palette"><div class="glass"><input id="pi" placeholder="Jump to… (Ctrl+K)" aria-label="Search commands"><ul id="pl"></ul></div></div>
+<div id="egg" role="dialog"><div><h2 class="mono" style="color:var(--r)">// ACCESS GRANTED</h2><p class="lead" style="margin:auto">You found the secret. Real developers read the source.<br>Press Esc to close.</p></div></div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
